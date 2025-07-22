@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #111;
+  color: white;
+}
+
+.netflix-logo {
+  font-size: 80px;
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 40vh;
+  animation: fadeInOut 2s ease-in-out forwards;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  30% { opacity: 1; }
+  70% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+#main-content {
+  display: none;
+  opacity: 0;
+  padding: 2rem;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+.my-name {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #ff4f4f;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ff4f4f;
+}
+
+.about-me {
+  max-width: 700px;
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+
+.about-me p {
+  margin-bottom: 1rem;
+}
+
+.social-links {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.social-links a {
+  color: #fff;
+  background-color: #ff4f4f;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: #e23636;
+}
+.project-highlight {
+  background-color: grey;
+  border-left: 6px solid #e50914; /* Netflix Red */
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: 'Poppins', sans-serif;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-highlight h3 {
+  margin-top: 0;
+  color: #e50914;
+  font-size: 20px;
+}
+
+.project-highlight p {
+  font-size: 16px;
+  color: black;
+}
+
+.project-highlight a {
+  text-decoration: none;
+  color: #e50914;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.project-highlight a:hover {
+  color: #ff3b3f;
+}
+
+
+.project-highlight:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  background-color: rgba(50, 50, 50, 0.9);
+
+}
+
